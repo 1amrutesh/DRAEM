@@ -177,32 +177,32 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     mvtec_obj_batch = [
-        ["capsule"],
-        ["bottle"],
-        ["carpet"],
-        ["leather"],
-        ["pill"],
-        ["transistor"],
-        ["tile"],
-        ["cable"],
-        ["zipper"],
-        ["toothbrush"],
-        ["metal_nut"],
-        ["hazelnut"],
-        ["screw"],
-        ["grid"],
-        ["wood"],
+        "capsule",
+        "bottle",
+        "carpet",
+        "leather",
+        "pill",
+        "transistor",
+        "tile",
+        "cable",
+        "zipper",
+        "toothbrush",
+        "metal_nut",
+        "hazelnut",
+        "screw",
+        "grid",
+        "wood",
     ]
 
     # Add MIAD dataset class names
     miad_obj_batch = [
-        ["catenary_dropper"],
-        ["electrical_insulator"],
-        ["metal_welding"],
-        ["nut_and_bolt"],
-        ["photovoltaic_module"],
-        ["wind_turbine"],
-        ["witness_mark"],
+        "catenary_dropper",
+        "electrical_insulator",
+        "metal_welding",
+        "nut_and_bolt",
+        "photovoltaic_module",
+        "wind_turbine",
+        "witness_mark",
     ]
     if args.dataset == "mvtec":
         obj_batch = mvtec_obj_batch
