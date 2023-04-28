@@ -78,7 +78,7 @@ class MVTecDRAEMTestDataset(Dataset):
 
 
 class MVTecDRAEMTrainDataset(Dataset):
-    def __init__(self, root_dir, anomaly_source_path, resize_shape=None):
+    def __init__(self, root_dir, anomaly_source_path, classes, resize_shape=None):
         """
         Args:
             root_dir (string): Directory with all the images.
@@ -87,6 +87,7 @@ class MVTecDRAEMTrainDataset(Dataset):
         """
         self.root_dir = root_dir
         self.resize_shape = resize_shape
+        self.classes = classes
 
         self.image_paths = sorted(glob.glob(root_dir + "/*.png"))
 
